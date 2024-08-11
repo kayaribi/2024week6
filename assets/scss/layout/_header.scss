@@ -1,4 +1,27 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.header {
+    h1{
+        font-size: 28px;
+    }
+    .form-control {
+        padding: 12px 20px;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+    }
+    .nav-link{
+        padding: 12px;
+    }
+
+    @media (min-width: 992px) {
+        .navbar{
+            border-bottom: 1px solid #ADB5BD;
+            
+        }
+        h1{
+            font-size: 40px;
+        }
+        .w-lg {
+            width: 276px;
+            margin-right: auto;
+        }
+    }
 }
