@@ -24,6 +24,20 @@
         height: 24px;
     }
 
+    .collapsed .navbar-toggler-icon{
+        display: block;
+    }
+    .navbar-toggler-icon{
+        display: none;
+    }
+    .collapsed .bi-x-lg{
+        display: none;
+    }
+
+    .bi-x-lg{        
+        display: block;
+    }
+
     .bi-search::before{
         display: none;
     }
