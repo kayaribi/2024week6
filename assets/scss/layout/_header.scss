@@ -1,27 +1,51 @@
 .header {
-    h1{
-        font-size: 28px;
+    .navbar{
+        .container{
+            padding-top: 8px;
+            padding-right: 8px;
+            padding-bottom: 4px;
+            padding-left: 12px;
+        }
+    }
+    .navbar-toggler{
+        padding: 12px;
     }
     .form-control {
         padding: 12px 20px;
-        font-size: 16px;
         letter-spacing: 0.05em;
+        position: relative;
+
     }
     .nav-link{
         padding: 12px;
+    }
+    .navbar-toggler-icon{
+        width: 24px;
+        height: 24px;
+    }
+
+    .bi-search::before{
+        display: none;
     }
 
     @media (min-width: 992px) {
         .navbar{
             border-bottom: 1px solid #ADB5BD;
-            
-        }
-        h1{
-            font-size: 40px;
+
         }
         .w-lg {
             width: 276px;
             margin-right: auto;
+        }
+
+        .bi-search{
+            position: absolute;
+            content: "";
+            top: 50px;
+            left: 360px;
+            &::before{
+                display: block;
+            }
         }
     }
 }

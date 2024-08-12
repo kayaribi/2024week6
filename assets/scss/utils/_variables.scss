@@ -442,6 +442,7 @@ $spacers: (
   7: $spacer * 2.25,//36
   8: $spacer * 2.5, //40
   9: $spacer * 3,   //48
+  10: $spacer * 3.25, //52
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -657,7 +658,8 @@ $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
 
-$line-height-base:            1.5 !default;
+// $line-height-base:            1.5 !default;
+$line-height-base:            1.2 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
