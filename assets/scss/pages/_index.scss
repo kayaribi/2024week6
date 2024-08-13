@@ -1,5 +1,5 @@
 .banner-img {
-    background-image: url("../../../assets/images/banner-sm.png");
+    background-image: url("../../images/banner-sm.png");
     width: 100%;
     height: 551px;
     background-repeat: no-repeat;
@@ -7,7 +7,7 @@
     background-size: cover;
 
     @media screen and (min-width: 992px) {
-        background-image: url("../../../assets/images/banner.png");
+        background-image: url("../../images/banner.png");
         height: 621px;
     }
 }
