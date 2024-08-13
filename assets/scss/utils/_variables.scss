@@ -435,6 +435,7 @@ $spacers: (
   0: 0,
   1: $spacer * .25, //4
   2: $spacer * .5,  //8
+  "2-5": $spacer * 0.75,  //12
   3: $spacer,       //16
   4: $spacer* 1.25, //20
   5: $spacer * 1.5, //24
@@ -514,9 +515,9 @@ $paragraph-margin-bottom:   1rem !default;
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
-  md: 768px,
+  // md: 768px,
   lg: 992px,
-  xl: 1200px,
+  // xl: 1200px,
   xxl: 1400px
 ) !default;
 // scss-docs-end grid-breakpoints
@@ -532,9 +533,9 @@ $grid-breakpoints: (
 // scss-docs-start container-max-widths
 $container-max-widths: (
   sm: 540px,
-  md: 720px,
+  // md: 720px,
   lg: 960px,
-  xl: 1140px,
+  // xl: 1140px,
   xxl: 1320px
 ) !default;
 // scss-docs-end container-max-widths
@@ -687,7 +688,8 @@ $font-sizes: (
 $headings-margin-bottom:      0 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
-$headings-font-weight:        500 !default;
+// $headings-font-weight:        500 !default;
+$headings-font-weight:        700;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
 // scss-docs-end headings-variables
