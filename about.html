@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about</title>
-    <script type="module" crossorigin src="/2024week6/assets/main-9aab1660.js"></script>
-    <link rel="stylesheet" href="/2024week6/assets/main-26753e96.css">
+    <script type="module" crossorigin src="/2024week6/assets/main-dc875269.js"></script>
+    <link rel="stylesheet" href="/2024week6/assets/main-593dcc26.css">
   </head>
   <body>
     <header class="header">
     <div class="container">
-        <nav class="navbar navbar-expand-lg p-0 py-lg-7">
+        <nav class="navbar navbar-expand-lg p-0 py-lg-7 border-bottom">
             <div class="container p-0 m-lg-0 mt-2 mb-1">
                 <a href="#">
                     <h1 class="text-gray-500 m-0 me-lg-7 fs-3 fs-lg-1">Vivre</h1>
@@ -23,17 +23,28 @@
                     <i class="bi bi-x-lg fs-4"></i>
                 </button>
                 <div class="navbar-collapse collapse mt-4 mt-lg-0" id="navbarNav">
-                    <input class="form-control bg-white border-1 w-lg mb-5 mb-lg-0 fs-6 py-2-5 px-4" type="search"
-                        placeholder="搜尋文章" aria-label="Search">
-                    <i class="bi bi-search fs-4 text-accent-200"></i>
+                    <div class="position-relative me-auto">
+                        <input class="form-control bg-white border-1 mb-lg-0 fs-6 py-2-5 px-4" type="search"
+                            placeholder="搜尋文章" aria-label="Search">
+                        <a class="d-block  d-flex align-items-center" type="button" id="button-addon1">
+                            <span
+                                class="material-symbols-outlined position-absolute top-50 end-0 translate-middle text-accent-200">search</span>
+                        </a>
+                    </div>
+                    <!-- <nav class="navbar me-auto">
+                        <form class="d-flex">
+                            <input class="form-control bg-white border-1 w-lg mb-5 mb-lg-0 fs-6 py-2-5 px-4" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </nav> -->
                     <ul class="navbar-nav align-items-lg-center gap-lg-4 fw-bold ">
-                        <li class="nav-item  mb-7 mb-lg-0">
+                        <li class="nav-item  my-5 mb-lg-0">
                             <a class="nav-link p-2-5 px-lg-4 py-lg-2 d-inline" href="#">所有文章</a>
                         </li>
-                        <li class="nav-item  mb-7 mb-lg-0">
+                        <li class="nav-item  mb-5 mb-lg-0">
                             <a class="nav-link p-2-5 x-lg-4 py-lg-2 d-inline" href="#">訂閱方案</a>
                         </li>
-                        <li class="nav-item  mb-10 mb-lg-0">
+                        <li class="nav-item  mb-8 mb-lg-0">
                             <a class="nav-link p-2-5 x-lg-4 py-lg-2 d-inline" href="#">關於我們</a>
                         </li>
                         <li class="nav-item">
