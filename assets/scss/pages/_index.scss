@@ -25,7 +25,8 @@
     .popular,
     .activity,
     .attention,
-    .life {
+    .life,
+    .share {
         padding: 80px 0 !important;
     }
 }
@@ -42,7 +43,7 @@
     }
 
     h6 {
-        font-weight: 600 !important;
+        font-weight: 700 !important;
 
     }
 
@@ -85,7 +86,7 @@
 
     .swiper p {
         line-height: 1.5;
-        font-weight: 400;
+        font-weight: 600;
         letter-spacing: 0.05em;
     }
 
@@ -131,6 +132,7 @@
 
     .swiper-prev:hover {
         background-color: #6c757d;
+        color: #DEE2E6;
     }
 
     .swiper-button-disabled {
@@ -202,7 +204,7 @@
 .tag {
     a {
         color: #6E6B67;
-        font-weight: 400;
+        font-weight: 700;
         font-size: 12px;
         letter-spacing: 0.1em;
         margin-right: 10px;
@@ -214,7 +216,7 @@
     .nav-link {
         letter-spacing: 0.1em;
         color: #212529;
-        font-weight: 600;
+        font-weight: 900;
         padding: 16px;
         border-radius: 4px;
         margin-bottom: 24px;
@@ -240,15 +242,128 @@
     .pic-4 {
         border-radius: 0px 20px 20px 0px;
     }
+
+    h5 {
+        font-weight: 900;
+    }
+
+    @media screen and (min-width: 992px) {
+        h4 {
+            font-weight: 900;
+        }
+    }
 }
 
 .life {
-    .fs-1{
-        font-weight: 600;
+    h4 {
+        font-size: 32px;
+        font-weight: 900;
     }
+
+    .fs-1 {
+        font-weight: 900;
+    }
+
     .fs-6 {
-        font-weight: 400;
+        font-weight: 700;
         line-height: 19.2px;
         letter-spacing: 0.1em;
+    }
+
+    .life-swiper-prev,
+    .life-swiper-next {
+        width: 56px;
+        height: 32px;
+    }
+
+    .life-swiper-pagination::after {
+        content: "";
+        width: 80px;
+        height: 1px;
+        background-color: #6c757d;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .life-swiper-pagination {
+        width: 232px;
+        position: relative;
+    }
+
+    .life-swiper-pagination-custom,
+    .life-swiper-pagination-fraction {
+        width: auto;
+    }
+
+    .life-swiper-prev:hover {
+        background-color: #6c757d;
+        color: #DEE2E6;
+    }
+
+    .life-swiper-next:hover {
+        background-color: #6c757d;
+        color: #DEE2E6;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .w-lg {
+        width: 416px !important;
+    }
+}
+
+
+
+.proposal {
+    .top-lable {
+        position: absolute;
+        top: 0px;
+        left: 16px;
+        width: auto;
+        height: auto;
+        padding: 8px 12px;
+        border-radius: 4px;
+        background-color: white;
+    }
+
+    .proposal-content {
+        position: absolute;
+        // width: 100%;
+        bottom: 0;
+        left: 0;
+        padding: 12px;
+    }
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+      }
+
+      @media screen and (min-width: 992px) {
+        .swiper-wrapper{
+            flex-wrap: wrap;
+            flex-direction: row;
+
+            gap:0 24px;
+        }
+
+        .swiper-slide{
+            width: auto; //因為這個找了好久沒版法用wrap
+        }
+        .move-top{
+            margin-top: 64px;
+        }
+        .cttractions-card{
+            margin-top: -43px;
+        }
+    }
+}
+
+.share{
+    h4{
+        font-weight: 900;
     }
 }
