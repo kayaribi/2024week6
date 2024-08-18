@@ -20,6 +20,17 @@
 }
 
 @media screen and (min-width: 992px) {
+
+    .featured,
+    .popular,
+    .activity,
+    .attention,
+    .life {
+        padding: 80px 0 !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
     .main {
         .banner-img {
             margin: 80px 0 !important;
@@ -40,11 +51,6 @@
 .popular {
     .custom-rounded {
         border-radius: 20px 0 20px 0;
-    }
-
-    @media screen and (min-width: 992px) {
-        padding: 80px 0;
-        overflow: hidden;
     }
 
     .mask::before {
@@ -148,12 +154,7 @@
 
 }
 
-.featured {
 
-    @media screen and (min-width: 992px) {
-        padding: 80px 0;
-    }
-}
 
 .bg-2-sm::before {
     content: "";
@@ -217,15 +218,37 @@
         padding: 16px;
         border-radius: 4px;
         margin-bottom: 24px;
+
         &.active {
             background-color: #E0EFDE;
         }
     }
-    .shadow{
+
+    .shadow {
         box-shadow: 0px 2px 8px #6e6b6714 !important;
+    }
+
+    .pic-1 {
+        border-radius: 20px 0px 4px 20px;
+    }
+
+    .pic-2,
+    .pic-3 {
+        border-radius: 4px;
+    }
+
+    .pic-4 {
+        border-radius: 0px 20px 20px 0px;
     }
 }
 
-.z-index {
-    z-index: 5000;
+.life {
+    .fs-1{
+        font-weight: 600;
+    }
+    .fs-6 {
+        font-weight: 400;
+        line-height: 19.2px;
+        letter-spacing: 0.1em;
+    }
 }
