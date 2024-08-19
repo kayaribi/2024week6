@@ -1,4 +1,16 @@
+.fw-900{
+    font-weight: 900;
+}
+
+.tag a:hover{
+    background-color: #6E6B67 !important;
+    color: white !important;
+}
+
 .main {
+    h6{
+        font-weight: 700 !important;
+    }
     .container {
         overflow: hidden;
     }
@@ -14,6 +26,11 @@
         @media screen and (min-width: 992px) {
             background-image: url("../images/banner.png");
             height: 621px;
+        }
+    }
+    @media screen and (min-width: 992px) {
+        h6{
+            font-weight: 900 !important;
         }
     }
 
@@ -169,11 +186,17 @@
     background-image: url("../images/bg-2-sm.png");
 }
 
+.activity{
+    h6{
+        font-weight: 700;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .activity {
         h6 {
+            font-weight: 900;
             color: #6E6B67;
-
         }
     }
 
@@ -255,10 +278,6 @@
 }
 
 .life {
-    h4 {
-        font-size: 32px;
-        font-weight: 900;
-    }
 
     .fs-1 {
         font-weight: 900;
@@ -351,7 +370,7 @@
         }
 
         .swiper-slide{
-            width: auto; //因為這個找了好久沒版法用wrap
+            width: auto; //因為這個找了好久沒辦法用wrap
         }
         .move-top{
             margin-top: 64px;

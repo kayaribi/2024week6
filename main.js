@@ -68,15 +68,34 @@ let swiper4 = new Swiper(".proposal-Swiper", {
   },
 });
 
+let swiper5 = new Swiper(".references-Swiper", {
+  spaceBetween: 24,
+  autoplay: {
+    delay: 3000,
+  },
+});
+
 function handleResize() {
   if (window.innerWidth >= 996) {
     if (swiper4) {
       swiper4.destroy(true, true); // 完全銷毀 Swiper 實例
       swiper4 = null; // 清空 swiper4 變數
     }
+    if (swiper5) {
+      swiper5.destroy(true, true); // 完全銷毀 Swiper 實例
+      swiper5 = null; // 清空 swiper5 變數
+    }
   } else {
     if (!swiper4) {
       swiper4 = new Swiper(".proposal-Swiper", {
+        autoplay: {
+          delay: 3000,
+        },
+      });
+    }
+    if (!swiper5) {
+      swiper5 = new Swiper(".references-Swiper", {
+        spaceBetween: 24,
         autoplay: {
           delay: 3000,
         },

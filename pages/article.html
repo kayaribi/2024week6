@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>article</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <div class="container p-0 px-lg-2-5">
+      <picture>
+        <source media="(min-width: 992px)" srcset="../assets/images/article-banner.png">
+        <img class="w-100 mb-8 mb-lg-80" src="../assets/images/article-banner-sm.png" alt="城市漫遊者">
+      </picture>
+    </div>
+
+    <div class="mx-lg-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-lg-auto">
+            <div class="breadcrumb m-0 pb-1 pb-lg-4">
+              <div class="d-flex align-items-center py-2-5">
+                <a class="link-gray-400 fs-lg-6" href="index.html">首頁</a>
+                /
+                <a class="link-gray-400 fs-lg-6" href="#">所有文章</a>
+                /
+                <a href="#" class="link-accent-200 fs-lg-6">私人島嶼的露營奇遇記</a>
+              </div>
+            </div>
+            <h4 class="fs-lg-1 fw-900 pb-2 pb-lg-3">私人島嶼的露營奇遇記</h4>
+            <div class="text-gray-300 fs-6 pb-28 pb-lg-8">
+              <time datetime="2024/5/1">2024 / 5 / 1</time>
+            </div>
+            <div class="content mb-5 mb-lg-8">
+              <div class="mask"></div>
+              <p class="fs-6 pb-lg-8 pb-28">
+                嗨！我是秘境尋蹤小編
+                Elly，很高興能與你分享我這段令人心曠神怡的旅程。這不僅僅是一次旅行，更是一場對自然、對內心的深度體悟，一次重新與大自然連結的奇妙旅程。希望透過我的分享，你也能感受到這份自然之美，並找到一份屬於自己的心靈寧靜。
+              </p>
+              <p class="fs-6 pb-lg-8 pb-28">
+                這段旅程的開始，是從一個遙遠的小島。我對於這片土地的認識，僅止於一些遊記和照片，對於它的神秘感與未知感讓我充滿了好奇。一艘小船，帶著我穿越海浪，穿過風暴，終於抵達了這片被大自然雕琢的寶地。當我踏上這片島嶼的那一刻，心中充滿了震撼與喜悅。
+              </p>
+              <div>
+                <picture>
+                  <source media="(min-width: 992px)" srcset="../assets/images/content-1.png">
+                  <img class="w-100" src="../assets/images/content-1-sm.png" alt="城市漫遊者">
+                </picture>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex flex-column align-items-center pb-60 pb-lg-100">
+                <div class="d-flex flex-column align-items-center mb-2-5 mb-lg-3 flex-lg-row">
+                  <h6>本篇為會員專屬文章</h6>
+                  <h6>馬上訂閱瀏覽所有內容！</h6>
+                </div>
+                <button class="btn btn-accent-200 text-white d-flex align-items-center gap-2-5 py-lg-3 px-lg-5"
+                  type="button">我要訂閱
+                  <i class="bi bi-arrow-right fs-4"></i>
+                </button>
+              </div>
+            </div>
+            <div class="references">
+              <div class="container">
+                <h4 class="fw-900 mb-4">延伸閱讀</h4>
+                <div class="swiper references-Swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card border-0 pb-60">
+                        <picture>
+                          <source media="(min-width: 992px)" srcset="../assets/images/read-1-sm.png">
+                          <img class="mb-3" src="../assets/images/read-1.png" class="card-img-top" alt="...">
+                        </picture>
+                        <div class="card-body d-flex flex-column  p-0 pb-5">
+                          <div class="pb-2-5">
+                            <h5 class="card-title fw-900">私人島嶼的露營奇遇記</h5>
+                            <p class="fs-6 text-gray-400">
+                              遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...</p>
+                          </div>
+                          <div class="align-self-end">
+                            <a class="fs-5 py-2 link-accent-200 fw-bold" href="#" style="letter-spacing: 0.1em;">Read
+                              More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card border-0 pb-60">
+                        <picture>
+                          <source media="(min-width: 992px)" srcset="../assets/images/read-2-sm.png">
+                          <img class="mb-3" src="../assets/images/read-2.png" class="card-img-top" alt="...">
+                        </picture>
+                        <div class="card-body d-flex flex-column  p-0 pb-5">
+                          <div class="pb-2-5">
+                            <h5 class="card-title fw-900">城市野營日記</h5>
+                            <p class="fs-6 text-gray-400">
+                              終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不安...</p>
+                          </div>
+                          <div class="align-self-end">
+                            <a class="fs-5 py-2 link-accent-200 fw-bold" href="#" style="letter-spacing: 0.1em;">Read
+                              More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card border-0 pb-60">
+                        <picture>
+                          <source media="(min-width: 992px)" srcset="../assets/images/read-3-sm.png">
+                          <img class="mb-3" src="../assets/images/read-3.png" class="card-img-top" alt="...">
+                        </picture>
+                        <div class="card-body d-flex flex-column  p-0 pb-5">
+                          <div class="pb-2-5">
+                            <h5 class="card-title fw-900">和寵物去露營 - 大自然之旅的...</h5>
+                            <p class="fs-6 text-gray-400">
+                              說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當的...</p>
+                          </div>
+                          <div class="align-self-end">
+                            <a class="fs-5 py-2 link-accent-200 fw-bold" href="#" style="letter-spacing: 0.1em;">Read
+                              More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>
