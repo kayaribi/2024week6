@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>所有文章</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <div class="pt-3 pb-60 py-lg-100">
+            <div class="container">
+                <div class="subscribe">
+                    <div class="d-flex align-items-center py-2-5 mb-2 mb-lg-4">
+                        <a class="link-gray-400 fs-lg-6" href="index.html">首頁</a>
+                        /
+                        <a class="link-accent-200 fs-lg-6" href="subscribe.html" >訂閱方案</a>
+                    </div>
+                    <h4 class="fs-lg-1 fw-900 pb-8 pb-lg-60">訂閱方案</h4>
+                </div>
+                <div class="subscribe-content">
+                    <ul class="nav nav-pills nav-fill justify-content-lg-center mb-3 mb-lg-8" id="pills-tab"
+                        role="tablist">
+                        <div class="col-lg-2 col-6">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-0 active" id="annual-payment-tab" data-bs-toggle="pill"
+                                    data-bs-target="#annual-payment" type="button" role="tab"
+                                    aria-controls="annual-payment" aria-selected="true">年繳</button>
+                            </li>
+                        </div>
+                        <div class="col-lg-2 col-6">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-0" id="monthly-payment-tab" data-bs-toggle="pill"
+                                    data-bs-target="#monthly-payment" type="button" role="tab"
+                                    aria-controls="monthly-payment" aria-selected="false">月繳</button>
+                            </li>
+                    </ul>
+
+                    <div class="tab-content" id="pills-tabContent">
+                        <!-- 年繳 -->
+                        <div class="tab-pane fade show active" id="annual-payment" role="tabpanel"
+                            aria-labelledby="annual-payment-tab">
+                            <div class="d-flex flex-column flex-lg-row justify-content-lg-between gap-lg-5">
+                                <div class="flex card p-5 p-lg-8 mb-5 mb-lg-0 bg-white">
+                                    <div class="card-body p-0">
+                                        <h6 class="card-title text-gray-400 fw-lg-900 mb-3 text-center fs-lg-5">輕量型</h6>
+                                        <h5 class="text-center fw-900 mb-lg-60 pb-7 pb-lg-8 fs-lg-4"
+                                            style="color: #A1A1AA;">
+                                            <span class="price me-3 fs-lg-1">NT 1180</span>/年
+                                        </h5>
+                                        <ul class="m-0 p-0 pb-60">
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">每月最新文章無限閱讀</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">專屬會員限定內容</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">定期電子報</h6>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-center">
+                                        <a class="check d-flex text-gray-400 align-items-center justify-content-center py-lg-5 py-2-5 gap-2-5 bg-gray-100"
+                                            style="border-radius: 100px;" href="payment.html">
+                                            <h6 class="fs-lg-5">我要訂閱</h6>
+                                            <span class="material-symbols-outlined fs-lg-4">
+                                                arrow_forward
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex card p-5 p-lg-8 mb-5 mb-lg-0 bg-white">
+                                    <div class="card-body p-0">
+                                        <h6 class="card-title text-gray-400 fw-lg-900 mb-3 text-center fs-lg-5">玩咖型</h6>
+                                        <h5 class="text-center fw-900 mb-lg-60 pb-7 pb-lg-8 fs-lg-4"
+                                            style="color: #A1A1AA;">
+                                            <span class="price me-3 fs-lg-1">NT 1900</span>/年
+                                        </h5>
+                                        <ul class="m-0 p-0 pb-60">
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">每月最新文章無限閱讀</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">專屬會員限定內容</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">定期電子報</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">年度精選禮物</h6>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-center">
+                                        <a class="check d-flex text-gray-400 align-items-center justify-content-center py-lg-5 py-2-5 gap-2-5 bg-gray-100"
+                                            style="border-radius: 100px;" href="#">
+                                            <h6 class="fs-lg-5">我要訂閱</h6>
+                                            <span class="material-symbols-outlined fs-lg-4">
+                                                arrow_forward
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex card p-5 p-lg-8 mb-5 mb-lg-0 bg-white">
+                                    <div class="card-body p-0">
+                                        <h6 class="card-title text-gray-400 fw-lg-900 mb-3 text-center fs-lg-5">家庭型</h6>
+                                        <h5 class="text-center fw-900 pb-7 pb-lg-3 fs-lg-4" style="color: #A1A1AA;">
+                                            <span class="price me-3 fs-lg-1">NT 7000</span>/年
+                                        </h5>
+                                        <h5
+                                            class="text-gray-300 fw-bold text-center mb-7 mb-lg-60  text-decoration-line-through">
+                                            NT 10700
+                                        </h5>
+                                        <ul class="m-0 p-0 pb-60">
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">每月最新文章無限閱讀</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">定期電子報</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">年度精選禮物</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">24/7 優先客戶服務</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">為每個成員量身打造專屬行程</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">最多 5 個家庭成員共享</h6>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-center">
+                                        <a class="check d-flex text-gray-400 align-items-center justify-content-center py-lg-5 py-2-5 gap-2-5 bg-gray-100"
+                                            style="border-radius: 100px;" href="#">
+                                            <h6 class="fs-lg-5">我要訂閱</h6>
+                                            <span class="material-symbols-outlined fs-lg-4">
+                                                arrow_forward
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 月繳 -->
+                        <div class="tab-pane fade" id="monthly-payment" role="tabpanel"
+                            aria-labelledby="monthly-payment-tab">
+                            <div class="d-flex flex-column flex-lg-row justify-content-lg-between gap-lg-5">
+                                <div class="flex card p-5 p-lg-8 mb-5 mb-lg-0 bg-white">
+                                    <div class="card-body p-0">
+                                        <h6 class="card-title text-gray-400 fw-lg-900 mb-3 text-center fs-lg-5">輕量型</h6>
+                                        <h5 class="text-center fw-900 mb-lg-60 pb-7 pb-lg-8 fs-lg-4"
+                                            style="color: #A1A1AA;">
+                                            <span class="price me-3 fs-lg-1">NT 99</span>/年
+                                        </h5>
+                                        <ul class="m-0 p-0 pb-60">
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">每月最新文章無限閱讀</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">專屬會員限定內容</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">定期電子報</h6>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-center">
+                                        <a class="check d-flex text-gray-400 align-items-center justify-content-center py-lg-5 py-2-5 gap-2-5 bg-gray-100"
+                                            style="border-radius: 100px;" href="#">
+                                            <h6 class="fs-lg-5">我要訂閱</h6>
+                                            <span class="material-symbols-outlined fs-lg-4">
+                                                arrow_forward
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex card p-5 p-lg-8 mb-5 mb-lg-0 bg-white">
+                                    <div class="card-body p-0">
+                                        <h6 class="card-title text-gray-400 fw-lg-900 mb-3 text-center fs-lg-5">玩咖型</h6>
+                                        <h5 class="text-center fw-900 mb-lg-60 pb-7 pb-lg-8 fs-lg-4"
+                                            style="color: #A1A1AA;">
+                                            <span class="price me-3 fs-lg-1">NT 159</span>/年
+                                        </h5>
+                                        <ul class="m-0 p-0 pb-60">
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">每月最新文章無限閱讀</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">專屬會員限定內容</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">定期電子報</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">年度精選禮物</h6>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-center">
+                                        <a class="check d-flex text-gray-400 align-items-center justify-content-center py-lg-5 py-2-5 gap-2-5 bg-gray-100"
+                                            style="border-radius: 100px;" href="#">
+                                            <h6 class="fs-lg-5">我要訂閱</h6>
+                                            <span class="material-symbols-outlined fs-lg-4">
+                                                arrow_forward
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex card p-5 p-lg-8 mb-5 mb-lg-0 bg-white">
+                                    <div class="card-body p-0">
+                                        <h6 class="card-title text-gray-400 fw-lg-900 mb-3 text-center fs-lg-5">家庭型</h6>
+                                        <h5 class="text-center fw-900 pb-7 pb-lg-3 fs-lg-4" style="color: #A1A1AA;">
+                                            <span class="price me-3 fs-lg-1">NT 599</span>/年
+                                        </h5>
+                                        <h5
+                                            class="text-gray-300 fw-bold text-center mb-7 mb-lg-60  text-decoration-line-through">
+                                            NT 899
+                                        </h5>
+                                        <ul class="m-0 p-0 pb-60">
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">每月最新文章無限閱讀</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">定期電子報</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">年度精選禮物</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">24/7 優先客戶服務</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400 mb-6 mb-lg-5">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">為每個成員量身打造專屬行程</h6>
+                                            </li>
+                                            <li class="d-flex align-items-center text-gray-400">
+                                                <span class="material-symbols-outlined fs-lg-4 me-2">
+                                                    check_box
+                                                </span>
+                                                <h6 class="fs-lg-5">最多 5 個家庭成員共享</h6>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-center">
+                                        <a class="check d-flex text-gray-400 align-items-center justify-content-center py-lg-5 py-2-5 gap-2-5 bg-gray-100"
+                                            style="border-radius: 100px;" href="#">
+                                            <h6 class="fs-lg-5">我要訂閱</h6>
+                                            <span class="material-symbols-outlined fs-lg-4">
+                                                arrow_forward
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

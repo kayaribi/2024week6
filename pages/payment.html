@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>所有文章</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <div class="pt-3 pb-60 py-lg-100">
+            <div class="container">
+                <div class="payment">
+                    <div class="d-flex align-items-center py-2-5 mb-2 mb-lg-4">
+                        <a class="link-gray-400 fs-lg-6" href="index.html">首頁</a>
+                        /
+                        <a class="link-gray-400 fs-lg-6" href="subscribe.html">訂閱方案</a>
+                        /
+                        <a class="link-accent-200 fs-lg-6" href="payment.html">付款</a>
+                    </div>
+                    <h4 class="fs-lg-1 fw-900 pb-8 pb-lg-9">付款</h4>
+                </div>
+                <div class="payment-content row flex-lg-nowrap">
+                    <div class="col-lg-7">
+                        <form class="rounded p-5 p-lg-8 mb-5 bg-white" action="#">
+                            <h5 class="text-black fs-lg-4 fw-900 pb-5 pb-lg-8">購買人</h5>
+                            <div>
+                                <h6 class="pb-2-5">姓名</h6>
+                                <div class="input-group bg-gray-100 rounded-0 py-2-5 px-3 mb-3">
+                                    <label class="input-group-text p-0 me-2 name-text" for="name">請輸入姓名</label>
+                                    <input type="text" class="form-control p-0" id="name" aria-label="name">
+                                </div>
+                            </div>
+                            <div>
+                                <h6 class="pb-2-5">密碼</h6>
+                                <div class="input-group bg-gray-100 rounded-0 py-2-5 px-3 mb-3">
+                                    <label class="input-group-text p-0 me-2 password-text" for="password">請輸入密碼</label>
+                                    <input type="password" class="form-control p-0" id="password" aria-label="password">
+                                </div>
+                            </div>
+                            <div>
+                                <h6 class="pb-2-5">電子信箱</h6>
+                                <div class="input-group bg-gray-100 rounded-0 py-2-5 px-3 mb-5">
+                                    <label class="input-group-text p-0 me-2 email-text" for="email">請輸入電子信箱</label>
+                                    <input type="text" class="form-control p-0" id="email" aria-label="email">
+                                </div>
+                            </div>
+                            <div class="form-check m-0">
+                                <input class="form-check-input" type="checkbox" value="" id="checkinfo">
+                                <label class="form-check-label fw-600" for="checkinfo">
+                                    記住我的資訊
+                                </label>
+                            </div>
+                        </form>
+                        <form class="rounded p-5 p-lg-8 mb-5 bg-white m-lg-0" action="#">
+                            <h5 class="text-black fs-lg-4 fw-900 pb-5 pb-lg-8">付款方式</h5>
+                            <h6 class="pb-1 pb-lg-3">Pay With</h6>
+                            <div class="form-check pb-5 pb-lg-8 m-0">
+                                <input class="form-check-input " type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label fw-600" for="flexRadioDefault2">
+                                    信用卡
+                                </label>
+                            </div>
+                            <div class="rounded-0 pb-5">
+                                <label for="card" class="fs-6 m-0 pb-2-5 fw-bold form-label">信用卡號碼</label>
+                                <input type="tel" class="form-control rounded-0 bg-gray-100" id="card"
+                                    placeholder="1234 5678 1234 5678">
+                            </div>
+                            <div class="d-flex gap-5">
+                                <div class="rounded-0 pb-5">
+                                    <label for="expiration-date" class="fs-6 m-0 pb-2-5 fw-bold form-label">過期日</label>
+                                    <input type="tel" class="form-control rounded-0 bg-gray-100" id="expiration-date"
+                                        placeholder="ＭＭ/YY">
+                                </div>
+                                <div class="rounded-0 pb-5">
+                                    <label for="authentication-code" class="fs-6 m-0 pb-2-5 fw-bold form-label">認證碼</label>
+                                    <input type="tel" class="form-control rounded-0 bg-gray-100" id="authentication-code"
+                                        placeholder="CVV">
+                                </div>
+                            </div>
+                            <div class="form-check m-0">
+                                <input class="form-check-input" type="checkbox" value="" id="checkcardinfo">
+                                <label class="form-check-label fw-600" for="checkcardinfo">
+                                    記住卡片資訊
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col">
+                    <div class="rounded p-5 p-lg-8 mb-5 bg-white">
+                        <h5 class=" fs-lg-4 fw-900 pb-5 pb-lg-8 text-accent-200 ">訂單資訊</h5>
+                        <div class="border-top border-bottom py-5">
+                            <div class="d-flex justify-content-between pb-2-5">
+                                <h6 class="fs-lg-5 fw-lg-900">輕量型方案</h6>
+                                <h6 class="fs-lg-5 ">NT 1,188</h6>
+                            </div>
+                            <h6 style="color: #A1A1AA;">年繳</h6>
+                        </div>
+
+                        <form class="cuppon py-5 py-lg-8" action="#">
+                            <div class="rounded-0 pb-5">
+                                <label for="cuppon" class="fs-6 fw-bold m-0 pb-2-5 form-label" style="color:#52525B;">折扣碼</label>
+                                <div class="d-flex gap-5">
+                                    <input type="tel" class="form-control rounded-0 bg-gray-100" id="cuppon"
+                                        placeholder="請輸入折扣碼">
+                                    <button class="btn btn-outline-success fs-6 py-lg-3 px-lg-5 text-nowrap">套用</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="border-top border-bottom py-5" style="color:#52525B;">
+                            <div class="d-flex justify-content-between pb-2-5">
+                                <h6>小計</h6>
+                                <h6 class="fs-lg-5">NT 1,188</h6>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <h6>折扣</h6>
+                                <h6 class="fs-lg-5">0</h6>
+                            </div>
+                        </div>
+                        <div class="py-5 py-lg-8">
+                            <div class="d-flex justify-content-between">
+                                <h6 style="color:#52525B;">總計</h6>
+                                <h6 class="fs-4" style="color:#09090B;">NT 1,188</h6>
+                            </div>
+                        </div>
+                        <div class="pay text-center">
+                            <a class="check d-flex text-white align-items-center justify-content-center py-lg-3 py-2-5 gap-2-5 bg-accent-200"
+                                style="border-radius: 100px;" href="payment-info.html">
+                                <h6 class="fs-lg-5">立即付款</h6>
+                                <i class="bi bi-arrow-right fs-lg-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

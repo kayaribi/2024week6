@@ -1,5 +1,9 @@
+:root{
+    border: 1px solid #dee2e6;
+}
+
 body{
-	color:#343A40
+	color:#343A40;
 }
 
 h1,
@@ -27,9 +31,70 @@ img {
 	height: auto;
 }
 
+.fw-600{
+	font-weight: 600 !important;
+}
+
+
+.fw-900{
+    font-weight: 900 !important;
+}
+
+.fw-lg-900{
+	@media screen and (min-width: 992px) {
+		font-weight: 900 !important;
+	}
+}
+
 .fs-6{
 font-size: 16px;
 font-weight: 600;
 letter-spacing: 0.05em;
 line-height: 1.5;
+}
+
+.mb-lg-80 {
+    @media screen and (min-width: 992px) {
+        margin-bottom: 80px !important;
+    }
+}
+
+.mb-lg-60 {
+    @media screen and (min-width: 992px) {
+        margin-bottom: 60px !important;
+    }
+}
+
+.fs-lg-6{
+    @media screen and (min-width: 992px) {
+        line-height: 1.5 !important;
+        
+    }
+}
+
+.pb-lg-100{
+    @media screen and (min-width: 992px) {
+        padding-bottom: 100px !important;
+    }
+}
+
+.pb-28{
+    padding-bottom: 28px !important;
+}
+
+.pb-60{
+    padding-bottom: 60px !important;
+}
+
+.pb-lg-60{
+	@media screen and (min-width: 992px) {
+		padding-bottom: 60px !important;
+	}
+}
+
+.py-lg-100{
+    @media screen and (min-width: 992px) {
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+    }
 }

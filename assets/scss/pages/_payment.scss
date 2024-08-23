@@ -1,0 +1,138 @@
+.payment {
+    a {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 2;
+        letter-spacing: 0.05em;
+    }
+
+    .d-flex {
+        gap: 6px;
+    }
+
+
+    .input-group-text {
+        border: none;
+        background-color: transparent;
+    }
+
+    .form-control {
+        border: none;
+    }
+
+}
+
+.payment-content {
+
+    .name-text,.password-text,.email-text {
+        color: #ADB5BD;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+    }
+    .form-control{
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        background-color: transparent;
+    }
+
+    .input-group:focus-within .name-text {
+        color: #212529;
+        font-weight: bold;
+    }
+
+    .input-group:focus-within .password-text {
+        color: #212529;
+        font-weight: bold;
+    }
+
+    .input-group:focus-within .email-text {
+        color: #212529;
+        font-weight: bold;
+    }
+
+    #name:focus {
+        box-shadow: none;
+    }
+
+    #password:focus {
+        box-shadow: none;
+    }
+
+    #email:focus {
+        box-shadow: none;
+    }
+
+    @media screen and (min-width: 992px) {
+        .input-group {
+            max-width: 100%;
+        }
+    }
+
+    .rounded{
+        border-radius: 0.75rem !important;
+    }
+
+    .form-check-input {
+        background-color: transparent; /* 更改背景顏色 */
+        border-color: #ABB5BE; /* 更改邊框顏色 */
+    }
+
+    .form-check-input:checked {
+        background-color: #569573;
+        border-color: #569573;
+    }
+
+    #card::placeholder {
+        color: #ADB5BD; /* input內容替換成想要的顏色 */
+    }
+
+    #card:focus {
+        box-shadow: none;
+    }
+
+    #expiration-date::placeholder {
+        color: #ADB5BD; /* input內容替換成想要的顏色 */
+    }
+
+    #expiration-date:focus {
+        box-shadow: none;
+    }
+
+    #authentication-code::placeholder {
+        color: #ADB5BD; /* input內容替換成想要的顏色 */
+    }
+
+    #authentication-code:focus {
+        box-shadow: none;
+    }
+
+    #cuppon::placeholder {
+        color: #ADB5BD; /* input內容替換成想要的顏色 */
+    }
+
+    #cuppon:focus {
+        box-shadow: none;
+    }
+
+    .cuppon{
+        button{
+            color: #6E6B67;
+            border-radius: 100px;
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: 0.1em;
+            padding: 12px 16px;
+        }
+        button:hover{
+            color: white;
+        }
+    }
+}
+
+.pay{
+    .check:hover{
+        background-color: #406C55 !important;
+    }
+}

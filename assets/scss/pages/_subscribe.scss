@@ -1,0 +1,74 @@
+.subscribe {
+    a {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 2;
+        letter-spacing: 0.05em;
+    }
+    .d-flex{
+        gap:6px;
+    }
+}
+
+.subscribe-content {
+    .flex {
+        flex: 1;
+    }
+
+    .nav-link {
+        color: #6C757D;
+        font-weight: 700;
+    }
+
+    .card {
+        border-radius: 12px;
+    }
+
+    .nav-pills .nav-link.active {
+        background-color: #569573;
+    }
+
+    .price {
+        font-family: Gurmukhi MN;
+        color: #52525B;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0.1em;
+    }
+
+    .material-symbols-outlined {
+        font-size: 20px;
+        font-variation-settings:
+            'FILL' 1
+    }
+
+    .card:hover {
+        border: 1px solid #569573;
+
+        .price {
+            color: #569573;
+        }
+
+        li {
+            color: #343A40 !important;
+        }
+
+        .check{
+            color: white !important;
+            background-color: #569573 !important;
+        }
+
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .nav {
+        gap: 24px;
+    }
+
+    .nav-link {
+        padding: 12px 81px;
+    }
+}

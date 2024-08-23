@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>所有文章</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="payment-info">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-center align-items-center gap-2-5 pb-5">
+                            <i class="bi bi-check2-circle fs-4 text-accent-200 fs-lg-1 "></i>
+                            <h3 class="text-accent-200 fw-900 fs-lg-1">付款成功</h3>
+                        </div>
+                        <div class="rounded bg-white p-5 p-8">
+                            <h5 class="fs-lg-4 fw-900" style="color: #09090B;">訂購資訊</h5>
+                            <div class="py-5 my-5 mb-lg-8 border-top border-bottom">
+                                <div class="d-flex justify-content-between pb-2 pb-lg-2-5" style="color: #09090B;">
+                                    <h6 class="fs-lg-5 fw-bold fw-lg-900">輕量型方案</h6>
+                                    <h6 class="fs-lg-5 fw-bold">NT 1,188</h6>
+                                </div>
+                                <h6 class="fw-bold pb-5 pb-lg-8" style="color: #A1A1AA;">年繳</h6>
+                                <div class="d-flex justify-content-between pb-3" style="color: #09090B;">
+                                    <h6 class="fw-bold" style="color: #A1A1AA;">開始日</h6>
+                                    <time class="fw-bold text-gray-400" datetime="2024-5-1">2024 / 5 / 1</time>
+                                </div>
+                                <div class="d-flex justify-content-between" style="color: #09090B;">
+                                    <h6 class="fw-bold" style="color: #A1A1AA;">終止日</h6>
+                                    <time class="fw-bold text-gray-400" datetime="2025-5-1">2025 / 5 / 1</time>
+                                </div>
+                            </div>
+                            <div class="pay">
+                                <a class="check d-flex text-white align-items-center justify-content-center py-lg-3 py-2-5 gap-2-5 bg-accent-200"
+                                    style="border-radius: 100px;" href="article-login.html">
+                                    <h6 class="fs-lg-5">瀏覽文章</h6>
+                                    <i class="bi bi-arrow-right fs-lg-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

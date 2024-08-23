@@ -1,29 +1,4 @@
-.mb-lg-80 {
-    @media screen and (min-width: 992px) {
-        margin-bottom: 80px !important;
-    }
-}
 
-.fs-lg-6{
-    @media screen and (min-width: 992px) {
-        line-height: 1.5 !important;
-        
-    }
-}
-
-.pb-lg-100{
-    @media screen and (min-width: 992px) {
-        padding-bottom: 100px !important;
-    }
-}
-
-.pb-28{
-    padding-bottom: 28px;
-}
-
-.pb-60{
-    padding-bottom: 60px;
-}
 
 .breadcrumb {
     a{
@@ -59,9 +34,6 @@
 }
 
 
-
-
-
 .references{
     .swiper {
         width: 100%;
@@ -81,6 +53,16 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+      @media screen and (min-width: 992px) {
+        .swiper-slide {
+            flex-shrink: 1; //很重要的設定，關係到尺寸，之後再來研究
+            border-bottom: 1px solid #E9ECEF;
+
+            img {
+                height: auto;
+            }
+        }
       }
 }
 
