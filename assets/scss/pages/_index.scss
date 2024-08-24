@@ -242,6 +242,12 @@
 
         &.active {
             background-color: #E0EFDE;
+            &:hover{
+                color: #212529;
+            }
+        }
+        &:hover {
+            color: #569573;
         }
     }
 
@@ -343,6 +349,26 @@
         padding: 8px 12px;
         border-radius: 4px;
         background-color: white;
+        z-index: 2;
+    }
+
+    .proposal-card{
+        &.mask::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #212529;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+    
+        &.mask:hover::before {
+            opacity: 0.4;
+            cursor: pointer;
+        }
     }
 
     .proposal-content {
