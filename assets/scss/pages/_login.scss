@@ -1,0 +1,119 @@
+.login {
+    .rounded {
+        border-radius: 12px !important;
+    }
+
+    .form-control {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: .05em;
+        background-color: transparent;
+    }
+
+    .member-account-text,
+    .member-password-text,
+    .member-email-text {
+        color: #adb5bd;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: .05em;
+    }
+
+    #member-account::placeholder {
+        color: #ADB5BD;
+        /* input內容替換成想要的顏色 */
+    }
+
+    #member-email::placeholder {
+        color: #ADB5BD;
+        /* input內容替換成想要的顏色 */
+    }
+
+    .member-password::placeholder {
+        color: #ADB5BD;
+        /* input內容替換成想要的顏色 */
+    }
+
+    #member-account:focus {
+        box-shadow: none;
+    }
+
+    #member-password:focus {
+        box-shadow: none;
+    }
+
+    #member-email:focus {
+        box-shadow: none;
+    }
+
+
+    .input-group:focus-within .member-email-text {
+        color: #212529;
+        font-weight: bold;
+    }
+
+    .input-group:focus-within .member-account-text {
+        color: #212529;
+        font-weight: bold;
+    }
+
+    .input-group:focus-within .member-password-text {
+        color: #212529;
+        font-weight: bold;
+    }
+
+    @media screen and (min-width: 992px) {
+        .input-group {
+            max-width: 100%;
+        }
+    }
+
+    .another-login:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 33%;
+        border: 1px solid #ADB5BD;
+    }
+
+    .another-login:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 33%;
+        border: 1px solid #ADB5BD;
+    }
+
+    @media screen and (min-width: 992px) {
+        .another-login:before {
+            width: 36%;
+        }
+
+        .another-login:after {
+            width: 36%;
+        }
+
+    }
+
+}
+
+.login-btn {
+    .check:hover {
+        background-color: #406C55 !important;
+    }
+}
+
+.login-social {
+    a {
+        color: #52525B;
+        border-radius: 100px;
+        background-color: #F8F9FA;
+
+        &:hover {
+            background-color: #406C55;
+            color: #F8F9FA;
+        }
+    }
+}

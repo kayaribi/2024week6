@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>註冊</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <div class="login py-60 py-lg-100">
+            <div class="container p-0">
+                <div class="row m-0 justify-content-center">
+                    <div class="col-lg-6  rounded p-0">
+                        <div class="p-5 p-lg-8 bg-white">
+                            <form action="#">
+                                <h5 class="fs-lg-4 fw-900 text-accent-200">註冊</h5>
+                                <div class="py-5 py-lg-8">
+                                    <div>
+                                        <h6 class="pb-2-5">會員帳號</h6>
+                                        <div class="input-group bg-gray-100 rounded-0 py-2-5 px-3 mb-3">
+                                            <label class="input-group-text p-0 me-2 member-account-text"
+                                                for="member-account">請輸入會員帳號</label>
+                                            <input type="text" class="form-control p-0" id="member-account"
+                                                aria-label="member-account">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="pb-2-5">密碼</h6>
+                                        <div class="input-group bg-gray-100 rounded-0 py-2-5 px-3 mb-3">
+                                            <label class="input-group-text p-0 me-2 member-password-text"
+                                                for="member-password">請輸入密碼</label>
+                                            <input type="password" class="form-control p-0" id="member-password"
+                                                aria-label="member-password">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="pb-2-5">電子信箱</h6>
+                                        <div class="input-group bg-gray-100 rounded-0 py-2-5 px-3 mb-5 mb-lg-8">
+                                            <label class="input-group-text p-0 me-2 member-email-text"
+                                                for="member-email">請輸入電子信箱</label>
+                                            <input type="email" class="form-control p-0" id="member-email"
+                                                aria-label="member-email">
+                                        </div>
+                                    </div>
+                                    <div class="login-btn text-center">
+                                        <a class="check d-flex text-white align-items-center justify-content-center py-lg-3 py-2-5 gap-2-5 bg-accent-200"
+                                            style="border-radius: 100px;" href="#">
+                                            <h6 class="fs-lg-5">立即註冊</h6>
+                                            <i class="bi bi-arrow-right fs-lg-5"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="text-center another-login position-relative">
+                                <h6 class="d-inline text-gray-300 fw-bold px-2-5">或以其他方式註冊</h6>
+                            </div>
+                            <div class="login-social py-5 py-lg-8">
+                                <a class="d-flex justify-content-center align-items-center gap-2-5 py-2-5 mb-2-5"
+                                    href="#">
+                                    <img src="../assets/images/icons-google.png" alt="google">
+                                    <p class="fw-bold">使用 Google 註冊</p>
+                                </a>
+                                <a class="d-flex justify-content-center align-items-center gap-2-5 py-2-5" href="#">
+                                    <img src="../assets/images/icons-facebook.png" alt="google">
+                                    <p class="fw-bold">使用 Facebook 註冊</p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-center gap-2-5">
+                                <p class="fs-6 fw-600">已經是會員了？</p>
+                                <a href="login.html" class="fs-6 fw-600 link-accent-200">點此登入</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>
