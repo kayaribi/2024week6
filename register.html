@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>註冊</title>
+  <script type="module" crossorigin src="/2024week6/assets/main-3cfb7286.js"></script>
+  <link rel="stylesheet" href="/2024week6/assets/main-62b6a966.css">
+</head>
+
+<body>
+    <header class="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg p-0 py-lg-7 border-bottom">
+            <div class="container p-0 m-lg-0 mt-2 mb-1">
+                <a href="index.html">
+                    <h1 class="text-gray-500 m-0 me-lg-7 fs-3 fs-lg-1">Vivre</h1>
+                </a>
+                <button class="navbar-toggler collapsed rounded-0 border-0 d-flex d-lg-none p-2-5" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <i class="bi bi-x-lg fs-4"></i>
+                </button>
+                <div class="navbar-collapse collapse mt-4 mt-lg-0" id="navbarNav">
+                    <!-- 套用每日作業41 -->
+                    <div class="input-group me-lg-auto">
+                        <label class="search-text input-group-text" for="search">搜尋文章</label>
+                        <input type="text" class="form-control" id="search" aria-label="Amount (to the nearest dollar)">
+                        <a href="#" class="input-group-text">
+                            <i class="bi bi-search green-200"></i>
+                        </a>
+                    </div>
+                    <!-- 之前自己寫的 -->
+                    <!-- <div class="position-relative me-auto">
+                        <input class="form-control bg-white border-1 mb-lg-0 fs-6 py-2-5 px-4" type="search"
+                            placeholder="搜尋文章" aria-label="Search">
+                        <a class="d-block  d-flex align-items-center" type="button" id="button-addon1">
+                            <span
+                                class="material-symbols-outlined position-absolute top-50 end-0 translate-middle text-accent-200">search</span>
+                        </a>
+                    </div> -->
+
+                    <ul class="navbar-nav align-items-lg-center gap-lg-4 fw-bold text-nowrap">
+                        <li class="nav-item  my-5 m-lg-0">
+                            <a class="nav-link p-2-5 px-lg-4 py-lg-2 d-inline" href="article.html">所有文章</a>
+                        </li>
+                        <li class="nav-item  mb-5 mb-lg-0">
+                            <a class="nav-link p-2-5 x-lg-4 py-lg-2 d-inline" href="subscribe.html">訂閱方案</a>
+                        </li>
+                        <li class="nav-item  mb-8 mb-lg-0">
+                            <a class="nav-link p-2-5 x-lg-4 py-lg-2 d-inline" href="about.html">關於我們</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html">
+                                <button class="btn btn-accent-200 text-white w-100 fs-6 py-lg-3 px-lg-5">登入 /
+                                    註冊</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+        <div class="login py-60 py-lg-100">
+            <div class="container p-0">
+                <div class="row m-0 justify-content-center">
+                    <div class="col-lg-6  rounded p-0">
+                        <div class="p-5 p-lg-8 bg-white">
+                            <form action="#">
+                                <h5 class="fs-lg-4 fw-900 text-accent-200">註冊</h5>
+                                <div class="py-5 py-lg-8">
+                                    <div>
+                                        <h6 class="pb-2-5">會員帳號</h6>
+                                        <div class="input-group bg-gray-100 rounded-0 py-2-5 px-3 mb-3">
+                                            <label class="input-group-text p-0 me-2 member-account-text"
+                                                for="member-account">請輸入會員帳號</label>
+                                            <input type="text" class="form-control p-0" id="member-account"
+                                                aria-label="member-account">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="pb-2-5">密碼</h6>
+                                        <div class="input-group bg-gray-100 rounded-0 py-2-5 px-3 mb-3">
+                                            <label class="input-group-text p-0 me-2 member-password-text"
+                                                for="member-password">請輸入密碼</label>
+                                            <input type="password" class="form-control p-0" id="member-password"
+                                                aria-label="member-password">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="pb-2-5">電子信箱</h6>
+                                        <div class="input-group bg-gray-100 rounded-0 py-2-5 px-3 mb-5 mb-lg-8">
+                                            <label class="input-group-text p-0 me-2 member-email-text"
+                                                for="member-email">請輸入電子信箱</label>
+                                            <input type="email" class="form-control p-0" id="member-email"
+                                                aria-label="member-email">
+                                        </div>
+                                    </div>
+                                    <div class="login-btn text-center">
+                                        <a class="check d-flex text-white align-items-center justify-content-center py-lg-3 py-2-5 gap-2-5 bg-accent-200"
+                                            style="border-radius: 100px;" href="#">
+                                            <h6 class="fs-lg-5">立即註冊</h6>
+                                            <i class="bi bi-arrow-right fs-lg-5"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="text-center another-login position-relative">
+                                <h6 class="d-inline text-gray-300 fw-bold px-2-5">或以其他方式註冊</h6>
+                            </div>
+                            <div class="login-social py-5 py-lg-8">
+                                <a class="d-flex justify-content-center align-items-center gap-2-5 py-2-5 mb-2-5"
+                                    href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGySURBVHgBtZM/T8JAGMafa4kQHSSMTCXRxMRBMK5GOjqYlNFJ/QAmTqyIg3HzIwCLjnQwrpToZqJFXRyMXYxOSmQAIuV8j9YGShv/RJ/k7tr33v7e5/4U+COxsAmeRRw2NMpQBgEJJvUmM2B9C+QCDulxE8EqQ0bRD2Q+iII+auCui3AZ7AzqcCDyBcSgUg0amxRfoTFLzSJHW36yB8KiXMCF/QkRH+bYOYGGHS/TnsnB+zRYGq/FFEj8AZc2cEqtw3NkXccP5DiS+2lwJlwBc7LBVrsjkGS+sRsGYJGI/rg/bzogLqWpc2YmWd2fzMEKYSD0eqI3pfEZHscv5DhitHmuodv3xALwNJLEwIsYdbhBgzJ4kZnp5IiJGl1CKfp63J7FUXtGhNSTnG4EVU7mrzWqWfWgkp16PshYg6UxFc291lLFhQhV16qa5odkSztZGkqeU4aygHiOhLSqFqeDv+LwXUigTknTFE8LVusthfu7ddh21OKsr46BXJhCsJoPNqZuJ2HdNLY9iNDIqek53aKbpBK9EgYRy5mKvWSGIWOOAtyl3SXRbwhrgmpRsSb+Ux8DMpnpdyeTfAAAAABJRU5ErkJggg==" alt="google">
+                                    <p class="fw-bold">使用 Google 註冊</p>
+                                </a>
+                                <a class="d-flex justify-content-center align-items-center gap-2-5 py-2-5" href="#">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVHgBvVO9SsRAEJ7d5OQKD9MdJ4gRfABLKznxAbTTVvEKnyLJA1hfcYpoZ2djf/oE2sqBsTEICgFF1Euyzk6SY/N3P819ELIz+fbb2ZkvAPNC/cIz5TOJx8qSes9rCxAWgNjA0EjSPrJvahp3fg5b7kQh3vMsBpENYyCA21Gn5VQKVYkYCxxWG5zWjx9BqdhIqN71zKEePedFds06nG8ZJCaxfv0G7meYbI62g85KX671dMOwFll4TAGnm0skcvX0De5XCP6vUK6oYR8hK4TZPSi5krmo0fro3i+eEg+DENfbpfEaRaHSoWYoqTX0KsZgvwlmQxvFwfEyvfWz11J+XNEJ+SJT+wv2I22qhFzfeX/5/X7qKaUi9oB3bqfRzu079Wdw0KRYTqsANGi2IsqFDsyIEF1eEJJ+QF9MLUZc5Vfh6kcUs6cRkxzJVXM8T5KEMOBr2K9Lzpk6AJ8x1k/cbMOsEEKY8oF54R/eZYMUmIQwhAAAAABJRU5ErkJggg==" alt="google">
+                                    <p class="fw-bold">使用 Facebook 註冊</p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-center gap-2-5">
+                                <p class="fs-6 fw-600">已經是會員了？</p>
+                                <a href="login.html" class="fs-6 fw-600 link-accent-200">點此登入</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+    <div class="container">
+        <p class="py-lg-5 py-4 text-primary-400 text-center border-top">©Vivre 2024 All right Reserved</h6>
+    </div>
+</footer>            
+</body>
+
+</html>
